@@ -66,9 +66,6 @@ public class EligServiceImpl implements EligService {
 		response.setPlanName(planName);
 		response.setCaseNum(caseNum);
 
-		response.setPlanName(planName);
-		response.setCaseNum(caseNum);
-
 		if ("SNAP".equals(planName)) {
 
 			Double salaryIncome = incomeEntity.getSalaryIncome();

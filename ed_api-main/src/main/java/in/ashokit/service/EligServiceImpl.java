@@ -66,6 +66,9 @@ public class EligServiceImpl implements EligService {
 		response.setPlanName(planName);
 		response.setCaseNum(caseNum);
 
+		response.setPlanName(planName);
+		response.setCaseNum(caseNum);
+
 		if ("SNAP".equals(planName)) {
 
 			Double salaryIncome = incomeEntity.getSalaryIncome();
@@ -91,10 +94,6 @@ public class EligServiceImpl implements EligService {
 
 		EligEntity entity = new EligEntity();
 		BeanUtils.copyProperties(response, entity);
-
-		EligEntity entity = new EligEntity();
-		BeanUtils.copyProperties(response, entity);
-
 
 		//eligRepo.save(entity);
 

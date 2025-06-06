@@ -92,7 +92,11 @@ public class EligServiceImpl implements EligService {
 		EligEntity entity = new EligEntity();
 		BeanUtils.copyProperties(response, entity);
 
-		eligRepo.save(entity);
+		EligEntity entity = new EligEntity();
+		BeanUtils.copyProperties(response, entity);
+
+
+		//eligRepo.save(entity);
 
 		return response;
 	}
